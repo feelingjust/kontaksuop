@@ -74,7 +74,7 @@
       flex:1;
       padding:12px;
       overflow-y:auto;
-      background:url('https://i.ibb.co/hm3yQhF/whatsapp-bg.png');
+      background:lightblue;
       background-size:cover;
     }
     .bubble {
@@ -344,7 +344,7 @@
     chatInput.value="";
 
     try{
-      const msg=`WhatsApp\n\n\`[${userId}]\` ${text}`;
+      const msg=`WhatsApp\n\n[${userId}] ${text}`;
       const res=await fetch(`https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`,{
         method:'POST',
         headers:{'Content-Type':'application/json'},
